@@ -2,16 +2,19 @@
 ![Github License](https://img.shields.io/badge/license-MIT-blue)
 
 ## Description
+Budget Tracker is a PWA application that allows user to update information either while online or offline.
 
-![Budget Tracker Screenshot]()
+![Budget Tracker Screenshot](public/assets/pwa-screenshot.png)
 
 ## Links
-- [Live Application]()
-- [GitHub Repo]()
+- [Live Application](https://omar-budget-tracker.herokuapp.com/)
+- [GitHub Repo](https://github.com/omar-94/budget-tracker)
 
 ## Technologies
-- React
-
+- Javascript
+- MongooseDB
+- MongooseDB Atlas
+- Heroku
 
 ## Contact 
 Omar Nava  
