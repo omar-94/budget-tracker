@@ -28,3 +28,20 @@ self.addEventListener('install', function (event) {
 })
 
 // Activate
+self.addEventListener('activate', function (event) {
+  event.waitUntil(
+    caches.keys().then(keyList => {
+      return Promise.all(
+        keyList.map(key => {
+          if (key !== CACHE_NAME && key !== DATA_CACHE_NAME) {
+            console.log('Removing old cache data', key);
+          }
+        })
+      )
+    })
+  )
+
+  self.clients.claim();
+})
+
+// Fetch
